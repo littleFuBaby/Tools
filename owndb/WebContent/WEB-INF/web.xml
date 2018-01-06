@@ -12,7 +12,7 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	id="WebApp_ID" version="3.1">
 	<!-- web項目名稱 -->
-	<display-name>own</display-name>
+	<display-name>owndb</display-name>
 	<!-- web項目歡迎首頁文件列表 -->
 	<welcome-file-list>
 		<!-- 首頁文件，具有先後順序， 放置于目錄WEB-INF/下，與本xml文件同目錄 -->
