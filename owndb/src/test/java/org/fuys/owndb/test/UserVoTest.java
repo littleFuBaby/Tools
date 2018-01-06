@@ -21,7 +21,8 @@ public class UserVoTest {
 		SqlSession session = sqlFactory.openSession();
 		
 		User user = new User();
-		user.setName("jackson");
+		user.setName("ella");
+		user.setSex(2);
 		
 		int len = session.insert("org.fuys.owndb.vo.mapping.User.insert",user);
 		TestCase.assertEquals(len, 1);
