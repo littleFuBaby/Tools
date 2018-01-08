@@ -3,28 +3,45 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-  <environments default="development">
-    <environment id="development">
-      <transactionManager type="JDBC"/>
-      <dataSource type="POOLED">
-        <!-- 
-        	using org.gjt.mm.mysql.Driver class before driver version 6.0.X 
-        	It depends on MySql.
-        	When use MySql 5.7.+, com.mysql.cj.jdbc.Driver should be used as driver class.
-        -->
-        <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-        <!--
-        	Url format depends on MySql.
-        	When use MySql 5.7.+, configuration of serverTimezone and useSSL should be added.
-        	Based on inner system interaction, SSL is closed.
-         -->
-        <property name="url" value="jdbc:mysql://localhost:3306/owndb?useSSL=false&amp;serverTimezone=UTC"/>
-        <property name="username" value="root"/>
-        <property name="password" value="admin"/>
-      </dataSource>
-    </environment>
-  </environments>
-  <mappers>
-  	<mapper resource="org/fuys/owndb/vo/mapping/User.xml"/>
-  </mappers>
+	<!-- 
+		configuration sub elements should be sorted
+		eg:
+		 "configuration" 的内容必须匹配 "(properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,
+		 objectWrapperFactory?,reflectorFactory?,plugins?,environments?,databaseIdProvider?,mappers?)"。 
+	-->
+	
+	<!-- configure second cache -->
+	<settings>
+		<setting name="cacheEnabled" value="true"/>
+	</settings>
+
+	<!-- configure VO class aliases -->
+	<typeAliases>
+		<typeAlias type="org.fuys.owndb.vo.Goal" alias="Goal"/>
+	</typeAliases>
+
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<!-- using org.gjt.mm.mysql.Driver class before driver version 6.0.X 
+					It depends on MySql. When use MySql 5.7.+, com.mysql.cj.jdbc.Driver should 
+					be used as driver class. -->
+				<property name="driver" value="com.mysql.cj.jdbc.Driver" />
+				<!-- Url format depends on MySql. When use MySql 5.7.+, configuration 
+					of serverTimezone and useSSL should be added. Based on inner system interaction, 
+					SSL is closed. -->
+				<property name="url"
+					value="jdbc:mysql://localhost:3306/owndb?useSSL=false&amp;serverTimezone=UTC" />
+				<property name="username" value="root" />
+				<property name="password" value="admin" />
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<!-- configure mappers -->
+	<mappers>
+		<mapper resource="org/fuys/owndb/vo/mapping/User.xml" />
+		<mapper resource="org/fuys/owndb/vo/mapping/Goal.xml"/>
+	</mappers>
 </configuration>

@@ -89,6 +89,7 @@ public class MyBatisSqlSessionFactory {
 				rebuildSqlSessionFactory();
 			}
 			sqlSession = sqlSessionFactory.openSession();
+			threadLocal.set(sqlSession);
 		}
 		return sqlSession;
 	}
