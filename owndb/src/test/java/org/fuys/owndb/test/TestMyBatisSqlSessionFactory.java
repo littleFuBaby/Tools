@@ -23,7 +23,7 @@ public class TestMyBatisSqlSessionFactory {
 	@Test
 	public void test() {
 		User user = new User();
-		user.setName("jack" + new Random().nextInt(9999));
+		user.setName("jay " + new Random().nextInt(99));
 		user.setSex(1);
 		
 		SqlSession session = MyBatisSqlSessionFactory.getSqlSession();

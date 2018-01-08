@@ -9,6 +9,11 @@
 		 "configuration" 的内容必须匹配 "(properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,
 		 objectWrapperFactory?,reflectorFactory?,plugins?,environments?,databaseIdProvider?,mappers?)"。 
 	-->
+	
+	<!-- configure second cache -->
+	<settings>
+		<setting name="cacheEnabled" value="true"/>
+	</settings>
 
 	<!-- configure VO class aliases -->
 	<typeAliases>
