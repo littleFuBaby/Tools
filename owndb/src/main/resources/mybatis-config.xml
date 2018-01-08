@@ -18,6 +18,7 @@
 	<!-- configure VO class aliases -->
 	<typeAliases>
 		<typeAlias type="org.fuys.owndb.vo.Goal" alias="Goal"/>
+		<typeAlias type="org.fuys.owndb.vo.User" alias="User"/>
 	</typeAliases>
 
 	<environments default="development">

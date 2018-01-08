@@ -5,8 +5,17 @@ import java.io.Serializable;
 @SuppressWarnings("serial")
 public class User implements Serializable {
 	
+	private Integer uid;
 	private String name;
 	private int sex;
+
+	public Integer getUid() {
+		return uid;
+	}
+
+	public void setUid(Integer uid) {
+		this.uid = uid;
+	}
 
 	public int getSex() {
 		return sex;
@@ -26,7 +35,7 @@ public class User implements Serializable {
 
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", sex=" + sex + "]";
+		return "User [uid=" + uid + ", name=" + name + ", sex=" + sex + "]";
 	}
 
 }
