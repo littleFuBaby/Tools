@@ -36,3 +36,20 @@ create table gift(
     origin	varchar(255),
     constraint pk_gid primary key(gid)
 )engine InnoDB;
+
+# table country
+drop table if exists country;
+create table country(
+	countryId		varchar(50)		not null,
+    name			varchar(255)	not null,
+    constraint pk_countryId 	primary key(countryId)
+)engine innodb;
+
+# table capital
+drop table if exists capital;
+create table capital(
+	capitalId		varchar(50)		not null,
+    countryId		varchar(50)		not null,
+    name			varchar(255)	not null,
+    constraint	pk_capitalId	primary key(capitalId)
+)engine innodb;

@@ -22,6 +22,8 @@
 		<typeAlias type="org.fuys.owndb.vo.Gift" alias="Gift"/>
 		<typeAlias type="org.fuys.owndb.vo.GiftBook" alias="GiftBook"/>
 		<typeAlias type="org.fuys.owndb.vo.GiftSouvenir" alias="GiftSouvenir"/>
+		<typeAlias type="org.fuys.owndb.vo.Country" alias="Country"/>
+		<typeAlias type="org.fuys.owndb.vo.Capital" alias="Capital"/>
 	</typeAliases>
 
 	<environments default="development">
@@ -48,5 +50,7 @@
 		<mapper resource="org/fuys/owndb/vo/mapping/User.xml" />
 		<mapper resource="org/fuys/owndb/vo/mapping/Goal.xml"/>
 		<mapper resource="org/fuys/owndb/vo/mapping/Gift.xml"/>
+		<mapper resource="org/fuys/owndb/vo/mapping/Country.xml"/>
+		<mapper resource="org/fuys/owndb/vo/mapping/Capital.xml"/>
 	</mappers>
 </configuration>
