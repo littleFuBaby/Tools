@@ -9,7 +9,14 @@ public class Country implements Serializable {
 	private String countryId;
 	private String name;
 	private Capital capital;
+	private List<Province> provinces;
 	
+	public List<Province> getProvinces() {
+		return provinces;
+	}
+	public void setProvinces(List<Province> provinces) {
+		this.provinces = provinces;
+	}
 	public Capital getCapital() {
 		return capital;
 	}
@@ -30,7 +37,8 @@ public class Country implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "Country [countryId=" + countryId + ", name=" + name + ", capital=" + capital + "]";
+		return "Country [countryId=" + countryId + ", name=" + name + ", capital=" + capital + ", provinces="
+				+ provinces + "]";
 	}
 
 }

@@ -8,6 +8,8 @@
 		<id column="countryId" property="countryId"/>
 		<result column="name" property="name"/>
 		<association column="countryId" property="capital" javaType="Capital" select="org.fuys.owndb.vo.mapping.Capital.selectByCountryId"/>
+		<collection property="provinces" column="countryId" javaType="java.util.List" 
+			ofType="Province" select="org.fuys.owndb.vo.mapping.Province.selectByCountryId"/>
 	</resultMap>
 	
 	<insert id="insert" parameterType="Country">

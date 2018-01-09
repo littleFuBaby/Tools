@@ -53,3 +53,12 @@ create table capital(
     name			varchar(255)	not null,
     constraint	pk_capitalId	primary key(capitalId)
 )engine innodb;
+
+# table province
+drop table if exists Province;
+create table Province(
+	provinceId		varchar(50)		not null,
+    countryId		varchar(50)		not null,
+    name			varchar(255)	not null,
+    constraint pk_provinceId	primary key(provinceId)
+)engine innodb;
