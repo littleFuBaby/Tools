@@ -19,6 +19,9 @@
 	<typeAliases>
 		<typeAlias type="org.fuys.owndb.vo.Goal" alias="Goal"/>
 		<typeAlias type="org.fuys.owndb.vo.User" alias="User"/>
+		<typeAlias type="org.fuys.owndb.vo.Gift" alias="Gift"/>
+		<typeAlias type="org.fuys.owndb.vo.GiftBook" alias="GiftBook"/>
+		<typeAlias type="org.fuys.owndb.vo.GiftSouvenir" alias="GiftSouvenir"/>
 	</typeAliases>
 
 	<environments default="development">
@@ -44,5 +47,6 @@
 	<mappers>
 		<mapper resource="org/fuys/owndb/vo/mapping/User.xml" />
 		<mapper resource="org/fuys/owndb/vo/mapping/Goal.xml"/>
+		<mapper resource="org/fuys/owndb/vo/mapping/Gift.xml"/>
 	</mappers>
 </configuration>

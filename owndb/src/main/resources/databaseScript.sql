@@ -23,3 +23,16 @@ create table goal(
     end_time	datetime,
     constraint	pk_goalId	primary key (goalId)
 )engine InnoDB;
+
+# table gift
+drop table if exists gift;
+create table gift(
+	gid		int		auto_increment,
+    name	varchar(30)		not null,
+    description		varchar(255),
+    cost	double,
+    flag	varchar(30)		not null,
+    author	varchar(30),
+    origin	varchar(255),
+    constraint pk_gid primary key(gid)
+)engine InnoDB;
