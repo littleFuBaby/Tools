@@ -25,6 +25,9 @@
 		<typeAlias type="org.fuys.owndb.vo.Country" alias="Country"/>
 		<typeAlias type="org.fuys.owndb.vo.Capital" alias="Capital"/>
 		<typeAlias type="org.fuys.owndb.vo.Province" alias="Province"/>
+		<typeAlias type="org.fuys.owndb.vo.Role" alias="Role"/>
+		<typeAlias type="org.fuys.owndb.vo.Groups" alias="Groups"/>
+		<typeAlias type="org.fuys.owndb.vo.RoleGroups" alias="RoleGroups"/>
 	</typeAliases>
 
 	<environments default="development">
@@ -54,5 +57,7 @@
 		<mapper resource="org/fuys/owndb/vo/mapping/Country.xml"/>
 		<mapper resource="org/fuys/owndb/vo/mapping/Capital.xml"/>
 		<mapper resource="org/fuys/owndb/vo/mapping/Province.xml"/>
+		<mapper resource="org/fuys/owndb/vo/mapping/Role.xml"/>
+		<mapper resource="org/fuys/owndb/vo/mapping/Groups.xml"/>
 	</mappers>
 </configuration>

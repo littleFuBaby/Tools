@@ -62,3 +62,25 @@ create table Province(
     name			varchar(255)	not null,
     constraint pk_provinceId	primary key(provinceId)
 )engine innodb;
+
+drop table if exists role;
+create table role(
+	rid		int		auto_increment,
+    name	varchar(255)	not null,
+    constraint pk_rid	primary key(rid)
+)engine innodb;
+
+drop table if exists groups;
+create table groups(
+	gid		int		auto_increment,
+    name	varchar(255)	not null,
+    constraint	pk_gid	primary key(gid)
+)engine innodb;
+
+drop table if exists role_groups;
+create table role_groups(
+	rid		int,
+    gid		int,
+    constraint fk_rid	foreign key(rid) references role(rid)on delete cascade,
+    constraint fk_gid	foreign key(gid) references groups(gid)on delete cascade
+)engine innodb;
