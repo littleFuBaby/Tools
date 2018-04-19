@@ -3,7 +3,7 @@ package org.fuys.owndb.test;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.fuys.owndb.model.MyBatisSqlSessionFactory;
+import org.fuys.owndb.sqlSessionFactory.MyBatisSqlSessionFactory;
 import org.fuys.owndb.vo.Groups;
 import org.fuys.owndb.vo.Role;
 import org.fuys.owndb.vo.RoleGroups;

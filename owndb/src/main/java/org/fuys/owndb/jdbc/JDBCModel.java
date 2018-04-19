@@ -1,4 +1,4 @@
-package org.fuys.owndb.model;
+package org.fuys.owndb.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -60,7 +60,7 @@ public class JDBCModel {
 	 * @param parameters
 	 * @return
 	 */
-	public static int insert(String sql ,String[]parameters){
+	public static int insert(String sql ,String ...parameters){
 		logger.info("Sql --> {}", sql);
 		logger.info("Parameters --> {}", Arrays.toString(parameters));
 		int result = 0;
@@ -83,7 +83,7 @@ public class JDBCModel {
 	 * @param parameters
 	 * @return
 	 */
-	public static int update(String sql ,String[]parameters){
+	public static int update(String sql ,String ... parameters){
 		logger.info("Sql --> {}" ,sql);
 		logger.info("parameters --> {}", Arrays.toString(parameters));
 		int result = 0;
@@ -106,7 +106,7 @@ public class JDBCModel {
 	 * @param parameters
 	 * @return
 	 */
-	public static int delete(String sql,String[]parameters){
+	public static int delete(String sql,String ... parameters){
 		logger.info("Sql --> {}" ,sql);
 		logger.info("parameters --> {}", Arrays.toString(parameters));
 		int result = 0;
@@ -129,7 +129,7 @@ public class JDBCModel {
 	 * @param parameters
 	 * @return
 	 */
-	public static int query(String sql,String[]parameters){
+	public static int query(String sql,String ... parameters){
 		logger.info("Sql --> {}" ,sql);
 		logger.info("parameters --> {}", Arrays.toString(parameters));
 		int result = 0;

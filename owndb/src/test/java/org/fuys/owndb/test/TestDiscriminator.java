@@ -3,7 +3,7 @@ package org.fuys.owndb.test;
 import java.util.List;
 import java.util.Random;
 
-import org.fuys.owndb.model.MyBatisSqlSessionFactory;
+import org.fuys.owndb.sqlSessionFactory.MyBatisSqlSessionFactory;
 import org.fuys.owndb.vo.Gift;
 import org.fuys.owndb.vo.GiftBook;
 import org.fuys.owndb.vo.GiftSouvenir;
