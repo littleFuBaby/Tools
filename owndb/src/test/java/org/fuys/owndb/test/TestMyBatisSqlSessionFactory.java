@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Random;
 
 import org.apache.ibatis.session.SqlSession;
-import org.fuys.owndb.model.MyBatisSqlSessionFactory;
+import org.fuys.owndb.sqlSessionFactory.MyBatisSqlSessionFactory;
 import org.fuys.owndb.vo.Goal;
 import org.fuys.owndb.vo.User;
 import org.junit.Test;

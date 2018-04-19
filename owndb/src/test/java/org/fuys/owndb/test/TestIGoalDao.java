@@ -7,7 +7,7 @@ import java.util.Random;
 
 import org.apache.log4j.Logger;
 import org.fuys.owndb.dao.IGoalDao;
-import org.fuys.owndb.model.MyBatisSqlSessionFactory;
+import org.fuys.owndb.sqlSessionFactory.MyBatisSqlSessionFactory;
 import org.fuys.owndb.vo.Goal;
 import org.junit.Test;
 
