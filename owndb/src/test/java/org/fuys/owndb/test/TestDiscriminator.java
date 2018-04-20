@@ -62,9 +62,11 @@ public class TestDiscriminator {
 			}
 			if(gift instanceof GiftBook){
 				logger.info("giftBook --> " + x);
+				logger.info("giftBook --> " + gift.toString());
 			}
 			if(gift instanceof GiftSouvenir){
 				logger.info("giftSouvenir --> " + x);
+				logger.info("giftSouvenir --> " + gift.toString());
 			}
 		}
 		logger.info(bookList.toString());
